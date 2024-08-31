@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sortrotate.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:44 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:20:33 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	prepstacks(int *stacka, int *stackb)
@@ -25,9 +37,9 @@ static int	maxi(int a, int b)
 	return (b);
 }
 
-int		updateminpos(int min, int *pos, int i, int j)
+int	updateminpos(int min, int *pos, int i, int j)
 {
-	int test;
+	int	test;
 
 	if (i >= 0 && j >= 0)
 		test = maxi(i, j);
@@ -48,9 +60,9 @@ int		updateminpos(int min, int *pos, int i, int j)
 
 void	search(int *stacka, int *stackb, int *pos)
 {
-	int i;
-	int j;
-	int min;
+	int	i;
+	int	j;
+	int	min;
 
 	min = INT_MAX;
 	i = -(stacka[0] / 2);
@@ -70,7 +82,7 @@ void	search(int *stacka, int *stackb, int *pos)
 void	sortrotate(int *stacka, int *stackb)
 {
 	int	pos[2];
-	int len;
+	int	len;
 
 	len = stacka[0];
 	prepstacks(stacka, stackb);
@@ -80,7 +92,7 @@ void	sortrotate(int *stacka, int *stackb)
 		checklenmove(stacka, stackb, pos);
 	}
 	len = 1;
-	while(stacka[len] != 1)
+	while (stacka[len] != 1)
 		len++;
 	if (len <= (stacka[0] / 2))
 	{

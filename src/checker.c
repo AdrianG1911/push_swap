@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   checker.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:14:47 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:24:02 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-int	checkinst(char *inst)
+static int	checkinst(char *inst)
 {
 	if (ft_strncmp(inst, "sa\n", 3) == 0)
 		return (1);
@@ -27,7 +39,7 @@ int	checkinst(char *inst)
 	return (0);
 }
 
-int buildstr(char **str)
+static int	buildstr(char **str)
 {
 	char	*line;
 	char	*temp;
@@ -51,7 +63,7 @@ int buildstr(char **str)
 	return (1);
 }
 
-void	makemove(int *stacka, int *stackb, char *inst)
+static void	makemove(int *stacka, int *stackb, char *inst)
 {
 	if (ft_strncmp(inst, "sa\n", 3) == 0)
 		sa(stacka, 0);
@@ -78,7 +90,7 @@ void	makemove(int *stacka, int *stackb, char *inst)
 	return ;
 }
 
-void	parseinst(int *stacka, int *stackb, char *str)
+static void	parseinst(int *stacka, int *stackb, char *str)
 {
 	int	i;
 
@@ -105,9 +117,9 @@ void	parseinst(int *stacka, int *stackb, char *str)
 
 int	main(int argc, char *argv[])
 {
-	char *str;
-	int *stacka;
-	int *stackb;
+	char	*str;
+	int		*stacka;
+	int		*stackb;
 
 	if (argc < 2)
 		return (0);

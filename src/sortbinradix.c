@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sortbinradix.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:35 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:21:57 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-static void pushback(int *stacka, int *stackb, int place, int maxplace)
+static void	pushback(int *stacka, int *stackb, int place, int maxplace)
 {
 	int	mask;
-	int len;
+	int	len;
 
 	if (place == maxplace)
 	{
@@ -23,13 +35,12 @@ static void pushback(int *stacka, int *stackb, int place, int maxplace)
 			len--;
 		}
 	}
-
 }
 
 static void	find0pushandback(int *stacka, int *stackb, int place, int maxplace)
 {
 	int	mask;
-	int len;
+	int	len;
 
 	mask = 1 << (place - 1);
 	len = stacka[0];
@@ -47,8 +58,8 @@ static void	find0pushandback(int *stacka, int *stackb, int place, int maxplace)
 void	binradixsort(int *stacka, int *stackb)
 {
 	int	maxplace;
-	int max;
-	int place;
+	int	max;
+	int	place;
 
 	max = stacka[0];
 	maxplace = 0;

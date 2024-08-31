@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stackmaker.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:47 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:20:46 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	simploop(int argc, int *stacka, int **newstacka)
 {
-	int i;
-	int j;
-	int jloc;
-	int min;
+	int	i;
+	int	j;
+	int	jloc;
+	int	min;
 
 	i = 1;
 	while (i < argc)
@@ -30,7 +42,7 @@ void	simploop(int argc, int *stacka, int **newstacka)
 
 int	*simplifyarray(int argc, int **stacka)
 {
-	int *newstacka;
+	int	*newstacka;
 
 	newstacka = (int *)ft_calloc(argc, sizeof(int));
 	if (!newstacka)

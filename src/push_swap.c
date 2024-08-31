@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:13 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:17:45 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 void	sort(int *stacka, int *stackb)
@@ -12,8 +24,8 @@ void	sort(int *stacka, int *stackb)
 
 int	main(int argc, char *argv[])
 {
-	int *stacka;
-	int *stackb;
+	int	*stacka;
+	int	*stackb;
 
 	if (argc < 2)
 		return (0);

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sortrotate_utils.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:41 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:22:12 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 static int	poscalibrate(int *stack, int pos)
@@ -26,8 +38,8 @@ int	pushcheck(int *stacka, int *stackb, int posa, int posb)
 static int	findmove(int *moves)
 {
 	int	move;
-	int min;
-	int i;
+	int	min;
+	int	i;
 
 	min = INT_MAX;
 	i = 0;
@@ -45,8 +57,8 @@ static int	findmove(int *moves)
 
 static void	move(int *stacka, int *stackb, int *pos, int move)
 {
-	int posa;
-	int posb;
+	int	posa;
+	int	posb;
 
 	posa = poscalibrate(stacka, pos[0]);
 	posb = poscalibrate(stackb, pos[1]);
@@ -62,10 +74,10 @@ static void	move(int *stacka, int *stackb, int *pos, int move)
 
 void	checklenmove(int *stacka, int *stackb, int *pos)
 {
-	int backa;
-	int backb;
-	int posa;
-	int posb;
+	int	backa;
+	int	backb;
+	int	posa;
+	int	posb;
 	int	moves[4];
 
 	posa = poscalibrate(stacka, pos[0]);
@@ -84,7 +96,3 @@ void	checklenmove(int *stacka, int *stackb, int *pos)
 	moves[3] = posb - 1 + backa;
 	move(stacka, stackb, pos, findmove(moves));
 }
-
-
-
-

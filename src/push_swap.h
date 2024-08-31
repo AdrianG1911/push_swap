@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:16 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:18:22 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 # include "../libft/libft.h"
@@ -44,7 +56,7 @@ void	sortrotate(int *stacka, int *stackb);
 void	sort(int *stacka, int *stackb);
 
 // error
-int	errorcheck(int argc, char **argv);
+int		errorcheck(int argc, char **argv);
 
 // get_next_line
 char	*get_next_line(int fd);

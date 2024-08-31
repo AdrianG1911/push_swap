@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sortanderror.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:32 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:19:15 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 static size_t	whitepass(const char *str)
@@ -30,9 +42,10 @@ static int	isdigitcheck(const char *str)
 	}
 	return (1);
 }
+
 int	repeatcheck(int *tings, int num)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	while (i <= tings[0])
@@ -49,7 +62,7 @@ int	repeatcheck(int *tings, int num)
 int	errorcheck(int argc, char **argv)
 {
 	int	i;
-	int *tings;
+	int	*tings;
 
 	tings = (int *)ft_calloc(argc, sizeof(int));
 	if (!tings)

@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   swap.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/31 17:15:51 by adrgutie          #+#    #+#             */
+/*   Updated: 2024/08/31 17:20:51 by adrgutie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
 static void	swap(int *stack)
 {
-	int temp;
+	int	temp;
 
 	temp = stack[1];
 	stack[1] = stack[2];
@@ -15,9 +27,8 @@ void	sa(int *stacka, int sa)
 		ft_printf("sa\n");
 	if (stacka[0] < 2)
 		;
-	else	
+	else
 		swap(stacka);
-	
 }
 
 void	sb(int *stackb, int sb)
@@ -26,7 +37,7 @@ void	sb(int *stackb, int sb)
 		ft_printf("sb\n");
 	if (stackb[0] < 2)
 		;
-	else	
+	else
 		swap(stackb);
 }
 
