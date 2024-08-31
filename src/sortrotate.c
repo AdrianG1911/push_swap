@@ -6,7 +6,7 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 17:15:44 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/08/31 17:20:33 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/08/31 17:36:54 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int	updateminpos(int min, int *pos, int i, int j)
 {
 	int	test;
 
+	test = 100;
 	if (i >= 0 && j >= 0)
 		test = maxi(i, j);
 	else if (i >= 0 && j < 0)
