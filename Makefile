@@ -18,13 +18,14 @@ RM 		= rm -f
 SRCS 	= src/push_swap.c src/swap.c src/push.c \
 src/rotate.c src/reverse_rotate.c src/sortbinradix.c \
 src/sort1to5.c src/sortrotate.c src/sortrotate_utils.c \
-src/sortrotate_moves.c src/sortanderror.c \
-src/stackmaker.c 
+src/sortrotate_moves.c src/error.c src/error_2.c\
+src/stackmaker.c src/stackmaker_2.c 
 
 BONUS_SRCS	= src/checker.c src/get_next_line.c \
 src/get_next_line_utils.c src/swap.c src/push.c \
 src/rotate.c src/reverse_rotate.c \
-src/stackmaker.c src/sortanderror.c
+src/stackmaker.c src/stackmaker_2.c \
+src/error.c src/error_2.c
 
 
 OBJS 	= $(SRCS:.c=.o)

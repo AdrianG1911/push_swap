@@ -18,9 +18,10 @@
 # endif
 
 // stack making
+int		*makestacka(int argc, char **argv);
 void	simploop(int argc, int *stacka, int **newstacka);
 int		*simplifyarray(int argc, int **stacka);
-int		*makestacka(int argc, char **argv);
+int		isitspace(int	c);
 
 // operation helper
 void	shiftleft(int *stack);
@@ -57,6 +58,9 @@ void	sort(int *stacka, int *stackb);
 
 // error
 int		errorcheck(int argc, char **argv);
+int		isdigitcheck(const char *str);
+int		repeatcheck(int *tings, int num);
+int		isiterror(int *tings, char *num);
 
 // get_next_line
 char	*get_next_line(int fd);
