@@ -23,7 +23,7 @@ int	argerrorcheck(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		if (isiterror(tings, argv[i]))
+		if (isiterror(tings, argv[i], 1))
 			return (free(tings), 1);
 		i++;
 	}
@@ -49,7 +49,7 @@ int	oneerrorcheck(int len, char *arg)
 			i++;
 		if (!(isitspace(arg[i])) && arg[i])
 		{
-			if (isiterror(tings, arg + i))
+			if (isiterror(tings, arg + i, 0))
 				return (free(tings), 1);
 		}
 		while (!isitspace(arg[i]) && arg[i])

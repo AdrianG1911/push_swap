@@ -15,7 +15,7 @@ static size_t	whitepass(const char *str)
 	return (i);
 }
 
-int	isdigitcheck(const char *str)
+int	isdigitcheck(const char *str, int args)
 {
 	size_t	i;
 
@@ -30,6 +30,8 @@ int	isdigitcheck(const char *str)
 			return (0);
 		i++;
 	}
+	if (isitspace(str[i]) && args)
+		return (0);
 	return (1);
 }
 
@@ -49,9 +51,9 @@ int	repeatcheck(int *tings, int num)
 	return (0);
 }
 
-int	isiterror(int *tings, char *num)
+int	isiterror(int *tings, char *num, int args)
 {
-	if (!(isdigitcheck(num)))
+	if (!(isdigitcheck(num, args)))
 		return (1);
 	if (ft_atol(num) > INT_MAX)
 		return (2);

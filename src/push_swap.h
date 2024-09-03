@@ -58,9 +58,9 @@ void	sort(int *stacka, int *stackb);
 
 // error
 int		errorcheck(int argc, char **argv);
-int		isdigitcheck(const char *str);
+int		isdigitcheck(const char *str, int args);
 int		repeatcheck(int *tings, int num);
-int		isiterror(int *tings, char *num);
+int		isiterror(int *tings, char *num, int args);
 
 // get_next_line
 char	*get_next_line(int fd);
