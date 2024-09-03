@@ -37,9 +37,11 @@ int	oneerrorcheck(int len, char *arg)
 	int *tings;
 	int	i;
 
+	if (len == 0)
+		return (1);
 	tings = (int *)ft_calloc(len + 1, sizeof(int));
 	if (!tings)
-		return (6);
+		return (1);
 	i = 0;
 	while (len > 0)
 	{

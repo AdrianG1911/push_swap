@@ -22,6 +22,8 @@ int	isdigitcheck(const char *str)
 	i = whitepass(str);
 	if (str[i] == '-' || str[i] == '+')
 		i++;
+	if (!str[i])
+		return (0);
 	while (str[i] && !(isitspace(str[i])))
 	{
 		if (!(ft_isdigit(str[i])))
