@@ -25,8 +25,8 @@ void	sort(int *stacka, int *stackb)
 	}
 	if (i == stacka[0] + 1)
 		return ;
-	// if (stacka[0] <= 5)
-	// 	sort1to5(stacka, stackb);
+	if (stacka[0] <= 5)
+	 	sort1to5(stacka, stackb);
 	else if (stacka[0] < 900)
 		sortrotate(stacka, stackb);
 	else
