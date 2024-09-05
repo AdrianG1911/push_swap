@@ -101,6 +101,8 @@ void	sortrotate(int *stacka, int *stackb)
 			ra(stacka, 1);
 	}
 	else
+	{
 		while (stacka[1] != 1)
 			rra(stacka, 1);
+	}
 }
