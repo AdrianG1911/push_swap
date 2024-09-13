@@ -6,7 +6,7 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 17:15:16 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/08/31 17:18:22 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/09/13 21:01:51 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 int		*makestacka(int argc, char **argv);
 void	simploop(int argc, int *stacka, int **newstacka);
 int		*simplifyarray(int argc, int **stacka);
-int		isitspace(int	c);
+int		isitspace(int c);
 
 // operation helper
 void	shiftleft(int *stack);

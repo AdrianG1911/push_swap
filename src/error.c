@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sortanderror.c                                     :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 17:15:32 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/08/31 17:19:15 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/09/13 21:01:27 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,9 @@ int	argerrorcheck(int argc, char **argv)
 	return (0);
 }
 
-
 int	oneerrorcheck(int len, char *arg)
 {
-	int *tings;
+	int	*tings;
 	int	i;
 
 	if (len == 0)

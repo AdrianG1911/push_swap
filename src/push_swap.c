@@ -6,7 +6,7 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 17:15:13 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/08/31 18:03:12 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/09/13 21:01:05 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	sort(int *stacka, int *stackb)
 	if (i == stacka[0] + 1)
 		return ;
 	if (stacka[0] <= 5)
-	 	sort1to5(stacka, stackb);
+		sort1to5(stacka, stackb);
 	else if (stacka[0] < 900)
 		sortrotate(stacka, stackb);
 	else

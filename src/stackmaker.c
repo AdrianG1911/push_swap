@@ -6,7 +6,7 @@
 /*   By: adrgutie <adrgutie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 17:15:47 by adrgutie          #+#    #+#             */
-/*   Updated: 2024/08/31 17:20:46 by adrgutie         ###   ########.fr       */
+/*   Updated: 2024/09/13 21:02:37 by adrgutie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,10 @@ int	*argmakestacka(int argc, char **argv)
 	stacka = simplifyarray(argc, &stacka);
 	return (stacka);
 }
-int *onemakestacka(int len, char *arg)
+
+int	*onemakestacka(int len, char *arg)
 {
-	int *stacka;
+	int	*stacka;
 	int	i;
 	int	j;
 
@@ -56,7 +57,7 @@ int *onemakestacka(int len, char *arg)
 	return (stacka);
 }
 
-int *makestacka(int argc, char **argv)
+int	*makestacka(int argc, char **argv)
 {
 	int		i;
 	int		len;
